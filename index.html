@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWave - Podcast</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            purple: '#1E1B2E',
+                            card: '#2A2640',
+                            accent: '#F43F5E',
+                            gradientStart: '#EC4899',
+                            gradientEnd: '#8B5CF6',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#151221] text-gray-200 font-sans antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+            <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-pink-500 to-purple-500 flex items-center justify-center">
+                <i class="fa-solid font-bold text-white text-sm fa-microphone"></i>
+            </div>
+            <span class="text-xl font-bold tracking-tight text-white">TechWave</span>
+        </div>
+        
+        <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
+            <a href="#about" class="hover:text-white transition">About</a>
+            <a href="#episodes" class="hover:text-white transition">Episodes</a>
+            <a href="#host" class="hover:text-white transition">Host</a>
+        </nav>
+
+        <a href="#subscribe" class="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-medium px-5 py-2.5 rounded-full text-sm transition shadow-lg shadow-purple-500/20">
+            Subscribe
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 text-center relative">
+        <div class="inline-flex items-center space-x-2 bg-purple-900/40 border border-purple-500/30 rounded-full px-4 py-1.5 mb-8">
+            <span class="bg-emerald-400 text-black font-bold text-xs px-2 py-0.5 rounded-full">NEW</span>
+        </div>
+        
+        <!-- Hero Graphic Placeholder -->
+        <div class="relative w-40 h-40 sm:w-48 sm:h-48 mx-auto mb-8 flex items-center justify-center">
+            <div class="absolute inset-0 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 rounded-full blur-xl opacity-50 animate-pulse"></div>
+            <div class="relative w-full h-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 rounded-full flex items-center justify-center shadow-2xl">
+                <i class="fa-solid fa-microphone text-5xl text-white"></i>
+            </div>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl font-extrabold text-white max-w-3xl mx-auto leading-tight mb-6">
+            Your daily dose of tech insights, productivity hacks, and personal growth
+        </h1>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+            <button class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-600 text-black font-bold px-6 py-3 rounded-full text-sm flex items-center justify-center space-x-2 transition">
+                <i class="fa-brands fa-spotify text-lg"></i>
+                <span>Listen On Spotify</span>
+            </button>
+            <button class="w-full sm:w-auto bg-transparent border border-purple-500/50 hover:bg-purple-900/30 text-white font-medium px-6 py-3 rounded-full text-sm transition">
+                Subscribe
+            </button>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-y border-purple-900/40">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+                <p class="text-2xl sm:text-4xl font-extrabold text-white">150K+</p>
+                <p class="text-xs sm:text-sm text-gray-400 uppercase tracking-wider mt-1">Monthly Listeners</p>
+            </div>
+            <div>
+                <p class="text-2xl sm:text-4xl font-extrabold text-white">200+</p>
+                <p class="text-xs sm:text-sm text-gray-400 uppercase tracking-wider mt-1">Episodes Published</p>
+            </div>
+            <div>
+                <p class="text-2xl sm:text-4xl font-extrabold text-white">4.9</p>
+                <p class="text-xs sm:text-sm text-gray-400 uppercase tracking-wider mt-1">Average Rating</p>
+            </div>
+            <div>
+                <p class="text-2xl sm:text-4xl font-extrabold text-white">50+</p>
+                <p class="text-xs sm:text-sm text-gray-400 uppercase tracking-wider mt-1">Industry Experts</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-6">About The Podcast</h2>
+        <p class="text-gray-300 text-base sm:text-lg leading-relaxed mb-4">
+            TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. We break down complex topics into digestible insights, explore productivity strategies that actually work, and share stories of personal growth from industry leaders.
+        </p>
+        <p class="text-gray-400 text-sm sm:text-base">
+            Join thousands of young professionals and tech enthusiasts who start their day with TechWave.
+        </p>
+    </section>
+
+    <!-- Features / Why Choose Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white text-center mb-12">Why Choose TechWave</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="bg-[#1E1B2E] p-6 rounded-2xl border border-purple-900/30 hover:border-purple-500/40 transition">
+                <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-400 text-xl mb-4">
+                    <i class="fa-solid fa-headphones"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Premium Audio Quality</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.
+                </p>
+            </div>
+
+            <div class="bg-[#1E1B2E] p-6 rounded-2xl border border-purple-900/30 hover:border-purple-500/40 transition">
+                <div class="w-12 h-12 bg-pink-500/10 rounded-xl flex items-center justify-center text-pink-400 text-xl mb-4">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Mobile Friendly</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    Listen on the go with seamless mobile experience and offline downloads.
+                </p>
+            </div>
+
+            <div class="bg-[#1E1B2E] p-6 rounded-2xl border border-purple-900/30 hover:border-purple-500/40 transition">
+                <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-400 text-xl mb-4">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Global Community</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    Connect with tech enthusiasts from over 120 countries worldwide.
+                </p>
+            </div>
+
+            <div class="bg-[#1E1B2E] p-6 rounded-2xl border border-purple-900/30 hover:border-purple-500/40 transition md:col-span-2">
+                <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-400 text-xl mb-4">
+                    <i class="fa-solid fa-comments"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Exclusive Interviews</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.
+                </p>
+            </div>
+
+            <div class="bg-[#1E1B2E] p-6 rounded-2xl border border-purple-900/30 hover:border-purple-500/40 transition">
+                <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-400 text-xl mb-4">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Rich Resources</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    Access show notes, transcripts, and additional learning materials for every episode.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    
+
+</body>
+</html>
